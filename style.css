@@ -1,0 +1,81 @@
+/* calculator container */
+table {
+    height: 174px;
+    width: 266px;
+    box-shadow: 0px 0px 5px grey;
+    margin:auto;
+    table-layout: fixed;
+}
+
+/* display container */
+#display {
+    text-align:center;
+    border:1px solid #fa980b;
+    border-collapse:collapse;/*  */
+    height:30px;
+    padding:0px;
+}
+
+/* labels container */
+#labels {
+    height:32px;
+    float:left;
+    display:table;
+    text-align:left;
+    font-size:9pt;
+    margin:0px;
+    margin-left:2px;
+    padding:0px;
+    border:0px;
+}
+
+/* memory label */
+#memory {
+    color:green;
+    margin:0px;
+    padding:0px;
+}
+
+/* error label */
+#error {
+    color:red;
+    margin:0px;
+    padding:0px;
+}
+
+/* displayed number */
+#number {
+    float:right;
+    position:relative;
+    top:-2px; 
+    margin-right:2px;
+    font-size:32px;
+    height:32px;
+    color:gray;
+}
+
+/* buttons normal style */
+.button {
+    color:white;
+    text-align:center;
+    background-color:#fa980b;
+    width:42px;
+    height:32px;
+    font-size:14pt;
+    cursor:default;
+}
+
+/* buttons hover style */
+.button:hover {
+    background-color:gray;
+}
+
+/* disable selection */
+.button, #display {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
